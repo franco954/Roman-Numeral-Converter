@@ -1,0 +1,10 @@
+
+
+.container{
+  display: flex;
+  flex-direction: column; /* o 'column' */
+  justify-content: center; /* alineación horizontal */
+  align-items: center;     /* alineación vertical */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
