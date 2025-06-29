@@ -1,10 +1,83 @@
 
-
-.container{
-  display: flex;
-  flex-direction: column; /* o 'column' */
-  justify-content: center; /* alineación horizontal */
-  align-items: center;     /* alineación vertical */
-  gap: 1rem;
-  flex-wrap: wrap;
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor general */
+.container {
+  display: flex;
+  flex-direction: column; /* Columna: header, main, footer */
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+/* Main + formulario */
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input[type="number"] {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Resultado */
+#output {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #333;
+}
+
+

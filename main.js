@@ -13,12 +13,15 @@ form.addEventListener('submit', function (event) {
 
     const number = document.getElementById('number').value;
     if (number === '') {
+        output.style.color = "red"
         output.textContent = "Please enter a number greater than or equal to 1";
     } else if (number >= 4000) {
+        output.style.color = "red"
         output.textContent = "Please enter a number less than or equal to 3999";
     }
     else {
         output.textContent = convertorNumber(number);
+        output.style.color = "blue"
     }
 
 })
